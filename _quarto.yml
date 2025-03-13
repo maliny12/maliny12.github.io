@@ -3,30 +3,22 @@ project:
   output-dir: docs
 
 website:
-  title: "Maliny Po"
+  navbar:
+    background: 'transparent'
+    search: true
+    left:
+      - text: "Maliny Po"
+        href: index.qmd
+      - text: "Industry"
+        href: industry.qmd
+      - text: "Personal"
+        href: personal.qmd
+      - text: "Contact"
+        href: about.qmd
 
-navbar:
-  background: "transparent"
-  foreground: "#ffff"
-  right:
-    - href: index.qmd
-      text: Home
-    - href: about.qmd
-      text: Contact
-
-page-footer:
-  background: "transparent"
-  foreground: "black"
-  left: "Copyright 2024"
-  right:
-    - icon: linkedin
-      href: "https://www.linkedin.com/in/malinypo"
-
-  
 format:
   html:
     #theme: mint
     css: styles.css
     toc: false
-    include-in-header: gtm_code_head.html
     #include-before-body: gtm_code_body.html
